@@ -12,7 +12,11 @@ body {
 }
 
 .contents-block {
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.accordion-button {
+    display: block;
 }
 
 h1 {
