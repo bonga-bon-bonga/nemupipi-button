@@ -1,0 +1,39 @@
+.navbar {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+body {
+    padding-top: 2rem;
+}
+
+.main-contents {
+    padding: 3rem 1.5rem;
+}
+
+.contents-block {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: larger;
+    color: #6594e0;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #6594e0;
+}
+
+.btn {
+    background: pink; /* 背景色 */
+    color: #444; /* 文字色 */
+    padding: 8px 30px; /* 上下の余白、左右の余白 */
+    margin: 5px 5px;
+    text-decoration: none; /* デフォルトで入る下線を消す */
+    border-radius: 30px; /* 角を丸くする */
+    transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+}
+.btn:hover {
+    background: palevioletred; /* 背景色 */
+}

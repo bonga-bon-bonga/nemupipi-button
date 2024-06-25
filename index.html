@@ -1,39 +1,90 @@
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ねむぴぴ*ボタン</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-reboot@5.3.0/reboot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nemupipi-button.css">
+
+        <title>ねむぴぴ*ボタン v0.0.1</title>
 </head>
 <body>
-    <header>
-        <h1>ねむぴぴ*ボタン</h1>
-    </header>
-    <main>
-        <h3>自己紹介系：</h3>
-        <button data-audio="audio901">ねむぴぴでーす</button>
-        <button data-audio="audio902">ふわふわうとうとバイオレンスvtuber</button>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">ねむぴぴ*ボタン</a>
+    </nav>
+    <main role="main" class="container">
+        <div class="main-contents">
+            <div class="contents-block">
+                <h1>自己紹介系：</h1>
+                <button class="btn" data-audio="audio901">ねむぴぴでーす</button>
+                <button class="btn" data-audio="audio902">ふわふわうとうとバイオレンスvtuber</button>
+            </div>
 
-        <h3>あいさつ：</h3>
-        <button data-audio="audio001">こんにちは</button>
-        <button data-audio="audio002">こんばんは</button>
-        <button data-audio="audio003">はじめまして</button>
-        <button data-audio="audio004">こんぴぴ～</button>
-        <button data-audio="audio005">みんなこんぴぴ～</button>
-        <button data-audio="audio006">こんばんぴ～</button>
-        <button data-audio="audio007">ハロー</button>
-        <button data-audio="audio008">こんちゃ～</button>
-        <button data-audio="audio009">おっつー</button>
+            <div class="contents-block">
+                <h1>あいさつ系：</h1>
+                <button class="btn" data-audio="audio001">こんぴぴ～</button>
+                <button class="btn" data-audio="audio002">みんなこんぴぴ～</button>
+                <button class="btn" data-audio="audio003">こんばんぴ～</button>
+                <button class="btn" data-audio="audio004">こんにちは</button>
+                <button class="btn" data-audio="audio005">こんばんは</button>
+                <button class="btn" data-audio="audio006">はじめまして</button>
+                <button class="btn" data-audio="audio007">ハロー</button>
+                <button class="btn" data-audio="audio008">こんちゃ～</button>
+                <button class="btn" data-audio="audio009">おっつー</button>
+                <button class="btn" data-audio="audio010">よろしくお願いしまーす</button>
+            </div>
 
-        <audio id="audio001" src="./voice/こんにちは_001.mp3"></audio>
-        <audio id="audio002" src="./voice/こんばんは～_001.mp3"></audio>
-        <audio id="audio003" src="./voice/はじめまして～_001.mp3"></audio>
-        <audio id="audio004" src="./voice/こんぴぴ～_001.mp3"></audio>
-        <audio id="audio005" src="./voice/みんなこんぴぴ～_001.mp3"></audio>
-        <audio id="audio006" src="./voice/こんばんぴ～_001.mp3"></audio>
-        <audio id="audio007" src="./voice/ハロー_001.mp3"></audio>
-        <audio id="audio008" src="./voice/こんちゃ～_001.mp3"></audio>
-        <audio id="audio009" src="./voice/おっつー_001.mp3"></audio>
-        <audio id="audio901" src="./voice/ねむぴぴでーす_001.mp3"></audio>
-        <audio id="audio902" src="./voice/ふわふわうとうとバイオレンスvtuber_001.mp3"></audio>
+            <div class="contents-block">
+                <h1>聞こえる？系：</h1>
+                <button class="btn" data-audio="audio011">聞こえる？</button>
+                <button class="btn" data-audio="audio012">聞こえている？</button>
+                <button class="btn" data-audio="audio013">聞こえた？</button>
+                <button class="btn" data-audio="audio014">聞こえてるっぽ～ぃ</button>
+                <button class="btn" data-audio="audio015">ミュートで喋っておりました～</button>
+            </div>
+
+            <div class="contents-block">
+                <h1>ありがとう系：</h1>
+                <button class="btn" data-audio="audio021">ありがとうございました</button>
+                <button class="btn" data-audio="audio022">ありがと～</button>
+                <button class="btn" data-audio="audio023">みんなありがと～</button>
+                <button class="btn" data-audio="audio024">パチパチありがと～</button>
+                <button class="btn" data-audio="audio025">みんなパチパチもありがと～</button>
+                <button class="btn" data-audio="audio026">弾幕ありがと～</button>
+                <button class="btn" data-audio="audio027">みんなも高評価ありがと～</button>
+            </div>
+
+            <audio id="audio001" src="./voice/こんぴぴ～_001.mp3"></audio>
+            <audio id="audio002" src="./voice/みんなこんぴぴ～_001.mp3"></audio>
+            <audio id="audio003" src="./voice/こんばんぴ～_001.mp3"></audio>
+            <audio id="audio004" src="./voice/こんにちは_001.mp3"></audio>
+            <audio id="audio005" src="./voice/こんばんは～_001.mp3"></audio>
+            <audio id="audio006" src="./voice/はじめまして～_001.mp3"></audio>
+            <audio id="audio007" src="./voice/ハロー_001.mp3"></audio>
+            <audio id="audio008" src="./voice/こんちゃ～_001.mp3"></audio>
+            <audio id="audio009" src="./voice/おっつー_001.mp3"></audio>
+            <audio id="audio010" src="./voice/よろしくお願いしまーす_001.mp3"></audio>
+
+            <audio id="audio011" src="./voice/聞こえる？_001.mp3"></audio>
+            <audio id="audio012" src="./voice/聞こえている？_001.mp3"></audio>
+            <audio id="audio013" src="./voice/聞こえた？_001.mp3"></audio>
+            <audio id="audio014" src="./voice/聞こえてるっぽ～ぃ_001.mp3"></audio>
+            <audio id="audio015" src="./voice/ミュートで喋っておりました～_001.mp3"></audio>
+
+            <audio id="audio021" src="./voice/ありがとうございました_001.mp3"></audio>
+            <audio id="audio022" src="./voice/ありがと～_001.mp3"></audio>
+            <audio id="audio023" src="./voice/みんなありがと～_001.mp3"></audio>
+            <audio id="audio024" src="./voice/パチパチありがと～_001.mp3"></audio>
+            <audio id="audio025" src="./voice/みんなパチパチもありがと～_001.mp3"></audio>
+            <audio id="audio026" src="./voice/弾幕ありがと～_001.mp3"></audio>
+            <audio id="audio027" src="./voice/みんなも高評価ありがと～_001.mp3"></audio>
+
+            <audio id="audio901" src="./voice/ねむぴぴでーす_001.mp3"></audio>
+            <audio id="audio902" src="./voice/ふわふわうとうとバイオレンスvtuber_001.mp3"></audio>
+        </div>
     </main>
     <footer>
         <p>ver.0.0.1</p>
@@ -50,5 +101,7 @@
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
