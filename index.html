@@ -1,19 +1,54 @@
-<!DOCTYPE html>
-<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タイトル</title>
+    <title>ねむぴぴ*ボタン</title>
 </head>
 <body>
     <header>
-        <h1>見出し1</h1>
+        <h1>ねむぴぴ*ボタン</h1>
     </header>
     <main>
-        <p>ここに本文を記述します。</p>
+        <h3>自己紹介系：</h3>
+        <button data-audio="audio901">ねむぴぴでーす</button>
+        <button data-audio="audio902">ふわふわうとうとバイオレンスvtuber</button>
+
+        <h3>あいさつ：</h3>
+        <button data-audio="audio001">こんにちは</button>
+        <button data-audio="audio002">こんばんは</button>
+        <button data-audio="audio003">はじめまして</button>
+        <button data-audio="audio004">こんぴぴ～</button>
+        <button data-audio="audio005">みんなこんぴぴ～</button>
+        <button data-audio="audio006">こんばんぴ～</button>
+        <button data-audio="audio007">ハロー</button>
+        <button data-audio="audio008">こんちゃ～</button>
+        <button data-audio="audio009">おっつー</button>
+
+        <audio id="audio001" src="./voice/こんにちは_001.mp3"></audio>
+        <audio id="audio002" src="./voice/こんばんは～_001.mp3"></audio>
+        <audio id="audio003" src="./voice/はじめまして～_001.mp3"></audio>
+        <audio id="audio004" src="./voice/こんぴぴ～_001.mp3"></audio>
+        <audio id="audio005" src="./voice/みんなこんぴぴ～_001.mp3"></audio>
+        <audio id="audio006" src="./voice/こんばんぴ～_001.mp3"></audio>
+        <audio id="audio007" src="./voice/ハロー_001.mp3"></audio>
+        <audio id="audio008" src="./voice/こんちゃ～_001.mp3"></audio>
+        <audio id="audio009" src="./voice/おっつー_001.mp3"></audio>
+        <audio id="audio901" src="./voice/ねむぴぴでーす_001.mp3"></audio>
+        <audio id="audio902" src="./voice/ふわふわうとうとバイオレンスvtuber_001.mp3"></audio>
     </main>
     <footer>
-        <p>フッターの内容</p>
+        <p>ver.0.0.1</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('button[data-audio]').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var audioId = this.getAttribute('data-audio');
+                    var audioElement = document.getElementById(audioId);
+                    audioElement.play();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
