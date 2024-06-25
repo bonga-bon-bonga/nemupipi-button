@@ -26,6 +26,12 @@ h1 {
     border-bottom: dashed 2px #6594e0;
 }
 
+hr {
+    border-width: 3px 0 0 0; /* 線の太さを指定 */
+    border-style: dashed; /* 線の種類を指定 */
+    border-color: cadetblue; /*線の色を指定 */
+}
+
 .btn-voice {
     background: pink; /* 背景色 */
     color: #444; /* 文字色 */
