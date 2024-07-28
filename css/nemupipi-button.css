@@ -11,6 +11,10 @@ body {
     padding: 3rem 1.5rem;
 }
 
+.editmode-information {
+    background: #80c0e0; /* 背景色 */
+}
+
 .contents-block {
     padding-bottom: .5rem;
 }
@@ -32,6 +36,10 @@ hr {
     border-color: cadetblue; /*線の色を指定 */
 }
 
+.hidden {
+    display: none;
+}
+
 .btn-voice {
     background: pink; /* 背景色 */
     color: #444; /* 文字色 */
@@ -44,6 +52,93 @@ hr {
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
 }
+
 .btn-voice:hover {
     background: palevioletred; /* 背景色 */
+}
+
+.btn-voice.button-disable {
+    background: #aaa; /* 背景色 */
+    color: #444; /* 文字色 */
+}
+
+.btn-voice.button-disable:hover {
+    background: #888; /* 背景色 */
+}
+
+.btn-edit {
+    background: #99CCFF; /* 背景色 */
+    color: #444; /* 文字色 */
+    padding: 8px 30px; /* 上下の余白、左右の余白 */
+    margin: 5px 5px;
+    text-decoration: none; /* デフォルトで入る下線を消す */
+    border-radius: 30px; /* 角を丸くする */
+    transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+}
+
+.btn-edit:hover {
+    background: #66CCFF; /* 背景色 */
+}
+
+.switch-button {
+    text-align: right;
+}
+
+input {
+    border: 1px solid #0c0c0d4d;
+    color: #737373;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+/* 楕円部 */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #B0B0B040;
+    border: 1px;
+    border-color: #DDDDDD;
+	border-style: solid;
+    border-radius: 8px;
+    height: 16px;
+    width: 32px;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #B0B0B033;
+    border-color: #B0B0B07f;
+}
+
+input[type="checkbox"]:active {
+    background-color: #B0B0B04d;
+}
+
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 1px #0a84ff inset, 0 0 0 1px #0a84ff, 0 0 0 4px #0a84ff4d;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0060df;
+    border-color: #0060df;
+}
+
+/* 中の● */
+input[type="checkbox"]::before {
+    background-color: currentColor;
+    border-radius: 6px;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin-left: 1px;
+    margin-top: 1px;
+    transition: margin-left .2s cubic-bezier(.07, .95, 0, 1);
+    width: 12px;
+}
+
+input[type="checkbox"]:checked::before {
+    background-color: #ffffff;
+    margin-left: 17px;
 }
