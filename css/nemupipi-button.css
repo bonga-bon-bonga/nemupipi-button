@@ -3,8 +3,27 @@
     padding-right: .5rem;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar {
+        --bs-navbar-padding-y:0;
+    }
+    .navbar-button {
+        font-size: 0.8rem;
+    }
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.75rem;
+    }
+}
+
+body {
+    padding-top: 3rem;
+}
+
 .main-contents {
-    padding: 3rem 1.5rem;
+    padding: 1.5rem 0.5rem;
 }
 
 .editmode-information {
