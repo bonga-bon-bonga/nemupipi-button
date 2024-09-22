@@ -1,0 +1,118 @@
+.navbar {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        --bs-navbar-padding-y:0;
+    }
+    .navbar-button {
+        font-size: 0.8rem;
+    }
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.75rem;
+    }
+    footer {
+        font-size: 0.75rem;
+    }
+}
+
+body {
+    padding-top: 3rem;
+    padding-bottom:44px;
+}
+
+.main-contents {
+    padding: 1.5rem 0.5rem;
+}
+
+.contents-block {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+h1.header-blue {
+    font-size: x-large;
+    color: #6594e0;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #6594e0;
+    padding-bottom: .5rem;
+}
+
+h1.header-lightgray {
+    font-size: x-large;
+    color: #a0a0a0;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #a0a0a0;
+    padding-bottom: .5rem;
+}
+
+h1.header-darkgray {
+    font-size: x-large;
+    color: #606060;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #a0a0a0;
+    padding-bottom: .5rem;
+}
+
+hr.border {
+    border-width: 3px 0 0 0; /* 線の太さを指定 */
+    border-style: dashed; /* 線の種類を指定 */
+    border-color: cadetblue; /*線の色を指定 */
+}
+
+hr.border-lightgray {
+    border-width: 3px 0 0 0; /* 線の太さを指定 */
+    border-style: dashed;    /* 線の種類を指定 */
+    border-color: #a0a0a0; /*文字色*/
+}
+
+hr.border-darkgray {
+    border-width: 3px 0 0 0; /* 線の太さを指定 */
+    border-style: dashed;    /* 線の種類を指定 */
+    border-color: #606060; /*文字色*/
+}
+
+.list_sortable li{
+    padding:10px;
+    background:#fff;
+    list-style:none;
+    cursor:move;
+}
+.list_sortable li:hover{
+    border-width: 3px;
+    border-color: #808080;
+}
+
+/* common */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+li .btn {
+    margin-left: auto;
+}
+
+select#select-value {
+    width: 100px;
+}
+
+button#random-select-btn, button#clipboard-btn, button#save-output-txt-btn {
+    border-width: 1px;
+    border-color: #808080;
+    font-size: small;
+    width: 100%;
+}
+
+div#droparea.dragover {
+    background: #d0d0d0;
+}
+
+.btn-border-radius {
+    border-radius: 30px; /* 角を丸くする */
+}

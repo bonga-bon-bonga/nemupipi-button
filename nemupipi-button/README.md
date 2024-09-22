@@ -43,6 +43,9 @@ https://www.youtube.com/watch?v=NjL7z0YfD6I
 * 【🎹piano⧸第13回】ねむぴぴあの -ピアノのお時間‐ 【作業⧸睡眠用】<br>
 https://www.youtube.com/watch?v=kPHAV_IFI-s
 
+* 【８番出口】ねむぴぴ地下通路から脱出します！！！【ねむぴぴ/Vtuber】<br>
+https://www.youtube.com/watch?v=QfPTuUbnsI8
+
 ## 【その他】
 「ねむぴぴ*ボタン」は非公式のものとなりますため、ねむぴぴさんご本人様の活動とは一切関係ございません。<br>
 また、音源の著作権は全て、ねむぴぴさんご本人様に帰属いたします。
