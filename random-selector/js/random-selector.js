@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const currentDate = new Date();
 
     const ADD_TEXT = document.getElementById('add-text');                               // リスト登録のテキストボックス
     const ADD_LIST_BUTTON = document.getElementById('add-list-btn');                    // 「登録」ボタン
@@ -292,6 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         saveTextToFile(outputTxt);
     });
     function saveTextToFile(text) {
+        var currentDate = new Date();
         var date = currentDate.getFullYear() +
             String(currentDate.getMonth() + 1).padStart(2, "0") +
             String(currentDate.getDate()).padStart(2, "0") +
